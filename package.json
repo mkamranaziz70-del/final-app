@@ -9,7 +9,6 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/main.js",
-    "postinstall": "npm run build",
     "start:dev": "npm run copy:templates && npx nest start --watch",
     "copy:templates": "xcopy templates dist\\templates /E /I /Y",
     "start:debug": "node -r tsconfig-paths/register node_modules/.bin/nest start --debug --watch",
@@ -97,3 +96,4 @@
     "testEnvironment": "node"
   }
 }
+
